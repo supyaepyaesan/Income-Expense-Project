@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="test6.css">
+</head>
+<body>
+    
+    <div class="bgo">
+        <h1>Income, Expense Project</h1>
+        <div class="outer">
+            <div class="left">
+                <div class="incomeinput inputform">
+                    <h2>Insert Income</h2>
+                    <div class="row">
+                        <label for="">Name</label>
+                        <input type="text" id="incomename" >
+                    </div>
+                    <div class="row">
+                        <label for="">Amount</label>
+                        <input type="number" id="incomeamount" >
+                    </div>
+                    <div class="row">
+                        <label for="">Date</label>
+                        <input type="text" id="incomedate" placeholder="Date" onfocus="(this.type='date');">
+                    </div>
+                    <div class="buttondiv">
+                        <button id="btnincome" onclick="btnIncomeClick();">Insert Income</button>
+                    </div>
+                </div>
+                <div class="expenseinput inputform">
+                    <h2>Insert Expense</h2>
+                    <div class="row">
+                        <label for="">Name</label>
+                        <input type="text" id="expensename">
+                    </div>
+                    <div class="row">
+                        <label for="">Amount</label>
+                        <input type="number" id="expenseamount">
+                    </div>
+                    <div class="row">
+                        <label for="">Date</label>
+                        <input type="text" id="expensedate" placeholder="Date" onfocus="(this.type='date');">
+                    </div>
+                    <div class="buttondiv">
+                        <button id="btnexpense" onclick="btnExpenseClick();">Insert Expense</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="totaldiv">
+                    <div class="row totalheader">
+                        <div class="total"><i class="fa-solid fa-sack-dollar"></i><i class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="total"><i class="fa-solid fa-circle-dollar-to-slot"></i></i><i class="fa-solid fa-dollar-sign"></i></div>
+                        <div class="total">Balance<i class="fa-solid fa-dollar-sign"></i></div>
+                    </div>
+                    <div class="row totaldata">
+                        <div class="total" id="itotal">0</div>
+                        <div class="total" id="etotal">0</div>
+                        <div class="total" id="balance">0</i></div>
+                    </div>
+                </div>
+                <div class="allincome all" id="allincome">
+                    <h2>All Incomes</h2>
+                    <div class="row header">
+                        <div>Income Name</div>
+                        <div>Date</div>
+                        <div>Amount</div>
+                        <div>Manage</div>
+                    </div>
+                    <!-- <div class="row data">
+                        <div>Salary</div>
+                        <div>2024-2-29</div>
+                        <div>400,000</div>
+                        <div><button><i class="fa-solid fa-pen-to-square"></i></button><button><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+                <div>
+                    <div class="allexpense all" id="allexpense">
+                        <h2>All Expense</h2>
+                        <div class="row header">
+                            <div>Income Name</div>
+                            <div>Date</div>
+                            <div>Amount</div>
+                            <div>Manage</div>
+                        </div>
+                        <!-- <div class="row data">
+                            <div>Salary</div>
+                            <div>2024-2-29</div>
+                            <div>400,000</div>
+                            <div><button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-solid fa-trash-can"></i></button></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="test6.js"></script>
+</body>
+</html>
